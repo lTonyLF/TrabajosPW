@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="formulario.html" >
+
+        <h3>text</h3>
+        <label for="nombre">Nombre</label>
+        <input type="text" placeholder="Escribe tu nombre" size="50" id="nombre" maxlength="10" pattern="">
+
+        <h3>radio</h3>
+        <input type="radio" name="genero" value="hombre"> Hombre
+        <input type="radio" name="genero" value="hombre"> Mujer
+        <input type="radio" name="genero" value="hombre"> Otro
+
+        <h3>select</h3>
+        <select name="frutas">
+            <option value="fresa">Fresa</option>
+            <option value="naranja">Naranja</option>
+            <option value="uva">Uva</option>
+        </select>
+
+        <h3>textarea</h3>
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe aqui"></textarea></h3>
+
+        <h3>Datalist</h3>
+        <label>buscador:</label>
+        <input list="buscador">
+        <datalist id="buscador">
+            <option value="Internet explorer"></option>
+            <option value="Chrome"></option>
+            <option value="Opera"></option>
+        </datalist>
+
+        <h3>password</h3>
+        <label>Contraseña: </label>
+        <input type="password" required>
+        
+        <h3>checked</h3>
+
+        <input type="checkbox" name="hola" value="valor1" checked> Hola
+        <input type="checkbox" name="adios" value="valor2" checked> Adios
+
+        <h3>color</h3>
+        <input type="color">
+
+        <h3>fecha</h3>
+        <input type="date" value="2000-12-06" min="2000-12-01">
+        
+        <input type="datetime-local">
+
+        <input type="week">
+        <input type="month">
+        <input type="time">
+        <h3>email</h3>
+        <input type="email">
+
+        <h3>Url</h3>
+        <input type="url">
+
+        <h3>number</h3>
+        <input type="number" min="0" maxlength="25" step="3">
+
+        <h3>rango</h3>
+        <input type="range" min="0" max="50" step=10>
+
+        <h3>search</h3>
+        <input type="search">
+
+        <h3>telefono</h3>
+        <input type="tel" pattern="" maxlength="10">
+
+        <h3>archivos</h3>
+        <input type="file" multiple>
+
+        <br><br>
+        
+        <input type="submit" value="Enviar">
+        <input type="image">
+        <button>Enviar</button>
+        <input type="reset" value="Limpiar">
+        </form>
+</body>
+</html>
