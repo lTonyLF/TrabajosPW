@@ -1,0 +1,30 @@
+/*PseudoElementos
+
+::first-letter -Elementos bloque
+::first-line - Elementos Bloque
+::Selection
+::Before
+::After
+*/
+
+.titulo::first-letter{
+    color: red;
+    font-size: 50px;
+
+}
+
+.linea::first-letter{
+    color: red;
+
+}
+.linea{
+    display: block;
+}
+
+.texto::first-line{
+    color: green;
+}
+.texto::selection{
+    color: red;
+    background: yellow;
+}
